@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TAP Cervas SI</string>
+    <string name="sobre">Sobre</string>
+
+    <!-- Sobre -->
+    <string name="descricao">Descrição</string>
+    <string name="texto_descricao">Quando vamos comprar uma cerveja, sempre ficamos com aquela dúvida cruel sobre qual vale mais a pena, garrafa, latinha ou seria melhor logo um litrão.
+Para resolver esse problema, desenvolvemos o TAP Cervas SI. Com ele você poderá beber muito mais e o que é melhor, pagando muito menos.
+Escolha a opção desejada, digite os preços e calcule qual opção é mais vantajosa!</string>
+    <string name="desenvolvedores">Desenvolvedores</string>
+    <string name="texto_desenvolvedores">O TAP Cervas SI foi inspirado no Calculadora de Bebida e desenvolvido pelo Prof. M.Sc. Gesiel Rios na disciplina de Tópicos Avançados em Programação juntamente com os alunos do 5º período da turma 2014.2 do Curso de Sistemas para Internet - SI da Faculdade de Educação de Bacabal - FEBAC.</string>
+
+    <!-- Principal -->
+    <string name="titulo_principal">Qual a bebida com o melhor custo benefício ?</string>
+    <string name="cifrao">R$</string>
+    <string name="garrafa">Garrafa</string>
+    <string name="ml_garrafa">600 ml</string>
+    <string name="lata">Lata</string>
+    <string name="ml_lata">350 ml</string>
+    <string name="calcular">Verificar</string>
+
+    <!-- Resultado -->
+    <string name="resultado">Resultado</string>
+    <string name="sub_titulo_resultado">Veja o melhor custo benefício</string>
+    <string name="instrucao_resultado">A ordem é do mais barato paa o mais caro</string>
+    <string name="ordem">Nº</string>
+    <string name="recipiente">Recipiente</string>
+    <string name="custo_ml">"Custo ML R$</string>
+</resources>

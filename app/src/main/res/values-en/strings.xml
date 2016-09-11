@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TAP Cervas SI</string>
+    <string name="sobre">About</string>
+
+    <!-- Sobre -->
+    <string name="descricao">Description</string>
+    <string name="texto_descricao">When we buy a beer, always stay with that cruel doubt about which is more worthwhile, bottle, tin or would be better then a litrão.
+To resolve this problem, we developed the TAP Hinds SI. With it you can drink much and what is best, paying much less.
+Select the desired option, enter the price and calculate which option is more advantageous!</string>
+    <string name="desenvolvedores">Developers</string>
+    <string name="texto_desenvolvedores">The TAP Cervas SI was inspired by the Calculadora de Bebidas and developed by Prof. M.Sc. Gesiel Rios in the course of Advanced Topics in Programming along with the students of the class 2014.2 at the Higher Education of Internet Systems - SI of the Faculty of Education of the Bacabal - FEBAC.</string>
+
+    <!-- Principal -->
+    <string name="titulo_principal">What drink with the best cost-benefit ratio ?</string>
+    <string name="cifrao">US$</string>
+    <string name="garrafa">Bottle</string>
+    <string name="ml_garrafa">600 ml</string>
+    <string name="lata">Tin</string>
+    <string name="ml_lata">350 ml</string>
+    <string name="calcular">Verify</string>
+
+    <!-- Resultado -->
+    <string name="resultado">Result</string>
+    <string name="sub_titulo_resultado">See the best value</string>
+    <string name="instrucao_resultado">The order is the cheapest to the most expensive</string>
+    <string name="ordem">Or</string>
+    <string name="recipiente">Container</string>
+    <string name="custo_ml">"ML Cost in US$</string>
+</resources>

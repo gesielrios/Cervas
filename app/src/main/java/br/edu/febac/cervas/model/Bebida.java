@@ -1,0 +1,56 @@
+package br.edu.febac.cervas.model;
+
+import java.io.Serializable;
+
+/**
+ * Created by gesie on 03/09/2016.
+ */
+public class Bebida implements Serializable {
+
+    private int id;
+    private String nome;
+    private int quantidade;
+    private float valor;
+    private float resultado;
+
+    public Bebida (String nome, float valor, int quantidade) {
+        this.nome = nome;
+        this.valor = valor;
+        this.quantidade = quantidade;
+        setResultado();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
+
+    public float getResultado() {
+        return resultado;
+    }
+
+    public void setResultado() {
+        this.resultado = this.valor / this.quantidade;
+    }
+
+    @Override
+    public String toString() {
+        return this.nome + " - " + this.resultado;
+    }
+}
