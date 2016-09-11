@@ -1,7 +1,6 @@
 package br.edu.febac.cervas;
 
 import android.content.Intent;
-import android.support.annotation.FloatRange;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,16 +10,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 
 import br.edu.febac.cervas.controller.BebidaComparator;
 import br.edu.febac.cervas.model.Bebida;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText garradaField;
+    EditText garrafaField;
     EditText lataField;
     EditText valorPersonalizada1Field;
     EditText mlPersonalizada1Field;
@@ -32,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        garradaField = (EditText) findViewById(R.id.valor_garrafa_field_main);
+        garrafaField = (EditText) findViewById(R.id.valor_garrafa_field_main);
         lataField = (EditText) findViewById(R.id.valor_lata_field_main);
         valorPersonalizada1Field = (EditText) findViewById(R.id.valor_personalizado_1_field_main);
         mlPersonalizada1Field = (EditText) findViewById(R.id.ml_personalizado_1_field_main);
@@ -45,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Bebida> bebidas = new ArrayList<>();
 
-        String campoValorGarrafa = garradaField.getText().toString();
+        String campoValorGarrafa = garrafaField.getText().toString();
         if (!campoValorGarrafa.isEmpty()) {
             float valorGarrafa = Float.parseFloat(campoValorGarrafa);
             bebidas.add(new Bebida("Garrafa", valorGarrafa, 600));
@@ -73,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             bebidas.add(new Bebida("Personalizada 2", valor, ml));
         }
 
-        if (bebidas.isEmpty() || bebidas.size() < 2) {
+        if (bebidas.size() < 2) {
             Toast.makeText(this, "É necessário preencher ao menos duas bebidas.", Toast.LENGTH_LONG).show();
         } else {
             Collections.sort(bebidas, new BebidaComparator());
@@ -103,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void limparCampos() {
 
-        garradaField.setText("");
+        garrafaField.setText("");
         lataField.setText("");
         valorPersonalizada1Field.setText("");
         mlPersonalizada1Field.setText("");
@@ -115,5 +112,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         limparCampos();
+        garrafaField.requestFocus();
     }
 }
