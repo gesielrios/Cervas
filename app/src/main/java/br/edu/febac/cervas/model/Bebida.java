@@ -11,13 +11,13 @@ public class Bebida implements Serializable {
     private String nome;
     private int quantidade;
     private float valor;
-    private float resultado;
+    private float custo;
 
     public Bebida (String nome, float valor, int quantidade) {
         this.nome = nome;
         this.valor = valor;
         this.quantidade = quantidade;
-        setResultado();
+        setCusto();
     }
 
     public int getId() {
@@ -41,16 +41,16 @@ public class Bebida implements Serializable {
     }
 
 
-    public float getResultado() {
-        return resultado;
+    public float getCusto() {
+        return custo;
     }
 
-    public void setResultado() {
-        this.resultado = this.valor / this.quantidade;
+    public void setCusto() {
+        this.custo = this.valor / this.quantidade;
     }
 
     @Override
     public String toString() {
-        return this.nome + " - " + this.resultado;
+        return this.nome + " - " + this.custo;
     }
 }
