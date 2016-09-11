@@ -100,4 +100,20 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void limparCampos() {
+
+        garradaField.setText("");
+        lataField.setText("");
+        valorPersonalizada1Field.setText("");
+        mlPersonalizada1Field.setText("");
+        valorPersonalizada2Field.setText("");
+        mlPersonalizada2Field.setText("");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        limparCampos();
+    }
 }

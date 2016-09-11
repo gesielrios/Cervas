@@ -67,7 +67,8 @@
                             android:inputType="numberDecimal"
                             android:layout_width="65dp"
                             android:layout_height="wrap_content"
-                            android:id="@+id/valor_garrafa_field_main"/>
+                            android:id="@+id/valor_garrafa_field_main"
+                            />
                     </LinearLayout>
                     <TextView
                         android:text="@string/garrafa"
