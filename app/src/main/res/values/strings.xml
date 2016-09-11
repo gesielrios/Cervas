@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TAP Cervas SI</string>
     <string name="sobre">Sobre</string>
+    <string name="contatos">Contatos</string>
 
     <!-- Sobre -->
     <string name="descricao">Descrição</string>
