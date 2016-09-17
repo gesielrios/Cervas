@@ -19,6 +19,8 @@ Select the desired option, enter the price and calculate which option is more ad
     <string name="lata">Tin</string>
     <string name="ml_lata">350 ml</string>
     <string name="calcular">Verify</string>
+    <string name="personalizado_um">Custon 1</string>
+    <string name="personalizado_dois">Custon 2</string>
 
     <!-- Resultado -->
     <string name="resultado">Result</string>

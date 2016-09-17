@@ -19,6 +19,8 @@ Escolha a opção desejada, digite os preços e calcule qual opção é mais van
     <string name="lata">Lata</string>
     <string name="ml_lata">350 ml</string>
     <string name="calcular">Verificar</string>
+    <string name="personalizado_um">Personalizado 1</string>
+    <string name="personalizado_dois">Personalizado 2</string>
 
     <!-- Resultado -->
     <string name="resultado">Resultado</string>
