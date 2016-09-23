@@ -25,7 +25,7 @@ Escolha a opção desejada, digite os preços e calcule qual opção é mais van
     <!-- Resultado -->
     <string name="resultado">Resultado</string>
     <string name="sub_titulo_resultado">Veja o melhor custo benefício</string>
-    <string name="instrucao_resultado">A ordem é do mais barato paa o mais caro</string>
+    <string name="instrucao_resultado">A ordem é do mais barato para o mais caro</string>
     <string name="ordem">Nº</string>
     <string name="recipiente">Recipiente</string>
     <string name="custo_ml">"Custo ML R$</string>

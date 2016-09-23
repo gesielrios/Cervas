@@ -60,7 +60,7 @@ public class BebidasAdapter extends BaseAdapter {
 
         TextView cost = (TextView) view.findViewById(R.id.cost_item);
         cost.setText(String.format("%.4f", new Object[]{Float.valueOf(bebida.getCusto())}));
-
+        
         return view;
     }
 }

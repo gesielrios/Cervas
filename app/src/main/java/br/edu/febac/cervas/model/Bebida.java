@@ -53,4 +53,8 @@ public class Bebida implements Serializable {
     public String toString() {
         return this.nome + " - " + this.custo;
     }
+
+    public float getCustoPorLivro() {
+        return custo * 1000;
+    }
 }
