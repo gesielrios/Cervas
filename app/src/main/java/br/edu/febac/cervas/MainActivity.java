@@ -15,7 +15,7 @@ import java.util.Collections;
 import br.edu.febac.cervas.controller.BebidaComparator;
 import br.edu.febac.cervas.model.Bebida;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends CervasBaseActivity {
 
     private EditText garrafaField;
     private EditText lataField;
@@ -56,37 +56,37 @@ public class MainActivity extends AppCompatActivity {
         String campoValorGarrafa = garrafaField.getText().toString();
         if (!campoValorGarrafa.isEmpty()) {
             float valorGarrafa = Float.parseFloat(campoValorGarrafa);
-            bebidas.add(new Bebida("Garrafa", valorGarrafa, 600));
+            bebidas.add(new Bebida("Garrafa", valorGarrafa, 600, R.drawable.garrafa));
         }
 
         String campoValorLata = lataField.getText().toString();
         if (!campoValorLata.isEmpty()) {
             float valorLata = Float.parseFloat(campoValorLata);
-            bebidas.add(new Bebida("Lata", valorLata, 350));
+            bebidas.add(new Bebida("Lata", valorLata, 350, R.drawable.lata));
         }
 
         String campoValorLitrao = litraoField.getText().toString();
         if (!campoValorLitrao.isEmpty()) {
             float valorLitrao = Float.parseFloat(campoValorLitrao);
-            bebidas.add(new Bebida("Litrão", valorLitrao, 1000));
+            bebidas.add(new Bebida("Litrão", valorLitrao, 1000, R.drawable.litrao));
         }
 
         String campoValorLatona = latonaField.getText().toString();
         if (!campoValorLatona.isEmpty()) {
             float valorLatona = Float.parseFloat(campoValorLatona);
-            bebidas.add(new Bebida("Latona", valorLatona, 550));
+            bebidas.add(new Bebida("Latona", valorLatona, 550, R.drawable.latona));
         }
 
         String campoValorLongNeck = longneckField.getText().toString();
         if (!campoValorLongNeck.isEmpty()) {
             float valorLongNeck = Float.parseFloat(campoValorLongNeck);
-            bebidas.add(new Bebida("Long Neck", valorLongNeck, 355));
+            bebidas.add(new Bebida("Long Neck", valorLongNeck, 355, R.drawable.longneck));
         }
 
         String campoValorBarril = barrilField.getText().toString();
         if (!campoValorBarril.isEmpty()) {
             float valorBarril = Float.parseFloat(campoValorBarril);
-            bebidas.add(new Bebida("Barril", valorBarril, 5000));
+            bebidas.add(new Bebida("Barril", valorBarril, 5000, R.drawable.barril));
         }
 
         String campoValorPersonalizado1 = valorPersonalizada1Field.getText().toString();
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         if (!campoValorPersonalizado1.isEmpty() && !campoMlPersonalizado1.isEmpty()) {
             float valor = Float.parseFloat(campoValorPersonalizado1);
             int ml = Integer.parseInt(campoMlPersonalizado1);
-            bebidas.add(new Bebida("Personalizada 1", valor, ml));
+            bebidas.add(new Bebida("Personalizada 1", valor, ml, R.drawable.interrogacao));
         }
 
         String campoValorPersonalizado2 = valorPersonalizada2Field.getText().toString();
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         if (!campoValorPersonalizado2.isEmpty() && !campoMlPersonalizado2.isEmpty()) {
             float valor = Float.parseFloat(campoValorPersonalizado2);
             int ml = Integer.parseInt(campoMlPersonalizado2);
-            bebidas.add(new Bebida("Personalizada 2", valor, ml));
+            bebidas.add(new Bebida("Personalizada 2", valor, ml, R.drawable.interrogacao));
         }
 
         if (bebidas.size() < 2) {
@@ -113,24 +113,6 @@ public class MainActivity extends AppCompatActivity {
             intentVaiParaResultado.putExtra("bebidas", bebidas);
             startActivity(intentVaiParaResultado);
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.about_item_menu:
-                startActivity(new Intent(this, AboutActivity.class));
-                break;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     private void limparCampos() {

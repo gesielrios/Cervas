@@ -12,11 +12,13 @@ public class Bebida implements Serializable {
     private int quantidade;
     private float valor;
     private float custo;
+    private int imagemID;
 
-    public Bebida (String nome, float valor, int quantidade) {
+    public Bebida (String nome, float valor, int quantidade, int imagemID) {
         this.nome = nome;
         this.valor = valor;
         this.quantidade = quantidade;
+        this.imagemID = imagemID;
         setCusto();
     }
 
@@ -51,10 +53,14 @@ public class Bebida implements Serializable {
 
     @Override
     public String toString() {
-        return this.nome + " - " + this.custo;
+        return this.nome + " - " + this.quantidade + " ml";
     }
 
     public float getCustoPorLivro() {
         return custo * 1000;
+    }
+
+    public int getImagemID() {
+        return this.imagemID;
     }
 }
