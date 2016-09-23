@@ -12,7 +12,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="br.edu.febac.ecocerva.MainActivity"
+        tools:context="br.edu.febac.cervas.MainActivity"
         tools:showIn="@layout/activity_main"
         android:orientation="vertical">
 
@@ -182,13 +182,13 @@
                             />
                     </LinearLayout>
                     <TextView
-                        android:text="Litrão"
+                        android:text="@string/litrao"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="15sp"/>
                     <TextView
-                        android:text="1000 ml"
+                        android:text="@string/ml_litrao"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -232,13 +232,13 @@
                             android:id="@+id/valor_latona_field_main"/>
                     </LinearLayout>
                     <TextView
-                        android:text="Latona"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="15sp"/>
                     <TextView
-                        android:text="550 ml"
+                        android:text="@string/ml_latona"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -293,13 +293,13 @@
                             />
                     </LinearLayout>
                     <TextView
-                        android:text="Long Neck"
+                        android:text="@string/longneck"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="15sp"/>
                     <TextView
-                        android:text="355 ml"
+                        android:text="@string/ml_longneck"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -343,13 +343,13 @@
                             android:id="@+id/valor_barril_field_main"/>
                     </LinearLayout>
                     <TextView
-                        android:text="Barril"
+                        android:text="@string/barril"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="15sp"/>
                     <TextView
-                        android:text="5000 ml"
+                        android:text="@string/ml_barril"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"

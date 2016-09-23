@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingTop="12dp"
-                android:text="Detalhes da Bebida"
+                android:text="@string/detalhe_bebida"
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <LinearLayout
@@ -60,7 +60,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nome:"
+                            android:text="@string/nome_bebida"
                             android:textStyle="bold"
                             android:layout_marginRight="8dp"
                             android:layout_marginLeft="8dp"
@@ -83,7 +83,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Quantidade:"
+                            android:text="@string/quantidade_bebida"
                             android:textStyle="bold"
                             android:layout_marginRight="8dp"
                             android:layout_marginLeft="8dp"
@@ -106,7 +106,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Valor:"
+                            android:text="@string/valor_bebida"
                             android:textStyle="bold"
                             android:layout_marginRight="8dp"
                             android:layout_marginLeft="8dp"
@@ -129,7 +129,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Custo por ml:"
+                            android:text="@string/custo_ml_bebida"
                             android:textStyle="bold"
                             android:layout_marginRight="8dp"
                             android:layout_marginLeft="8dp"
@@ -151,7 +151,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Custo por litro:"
+                            android:text="@string/custo_por_litro"
                             android:textStyle="bold"
                             android:layout_marginRight="8dp"
                             android:layout_marginLeft="8dp"

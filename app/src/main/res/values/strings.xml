@@ -22,6 +22,16 @@ Escolha a opção desejada, digite os preços e calcule qual opção é mais van
     <string name="personalizado_um">Personalizado 1</string>
     <string name="personalizado_dois">Personalizado 2</string>
 
+    <string name="litrao">Litrão</string>
+    <string name="ml_litrao">1000 ml</string>
+    <string name="latona">Latona</string>
+    <string name="ml_latona">550 ml</string>
+    <string name="longneck">Long Neck</string>
+    <string name="ml_longneck">355 ml</string>
+    <string name="barril">Barril</string>
+    <string name="ml_barril">5000 ml</string>
+
+
     <!-- Resultado -->
     <string name="resultado">Resultado</string>
     <string name="sub_titulo_resultado">Veja o melhor custo benefício</string>
@@ -29,4 +39,14 @@ Escolha a opção desejada, digite os preços e calcule qual opção é mais van
     <string name="ordem">Nº</string>
     <string name="recipiente">Recipiente</string>
     <string name="custo_ml">"Custo ML R$</string>
+
+    <!-- Detalhes Bebida -->
+    <string name="detalhe_bebida">Detalhes da Bebida</string>
+    <string name="nome_bebida">Nome:</string>
+    <string name="quantidade_bebida">Quantidade:</string>
+    <string name="valor_bebida">Valor:</string>
+    <string name="custo_ml_bebida">Custo por ml:</string>
+    <string name="custo_por_litro">Custo por litro:</string>
+
+
 </resources>

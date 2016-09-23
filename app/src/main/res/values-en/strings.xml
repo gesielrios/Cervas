@@ -22,6 +22,15 @@ Select the desired option, enter the price and calculate which option is more ad
     <string name="personalizado_um">Custon 1</string>
     <string name="personalizado_dois">Custon 2</string>
 
+    <string name="litrao">Big Bottle</string>
+    <string name="ml_litrao">1000 ml</string>
+    <string name="latona">Big Tin</string>
+    <string name="ml_latona">550 ml</string>
+    <string name="longneck">Long Neck</string>
+    <string name="ml_longneck">355 ml</string>
+    <string name="barril">Barrel</string>
+    <string name="ml_barril">5000 ml</string>
+
     <!-- Resultado -->
     <string name="resultado">Result</string>
     <string name="sub_titulo_resultado">See the best value</string>
@@ -29,4 +38,14 @@ Select the desired option, enter the price and calculate which option is more ad
     <string name="ordem">Or</string>
     <string name="recipiente">Container</string>
     <string name="custo_ml">"ML Cost in US$</string>
+
+    <!-- Detalhes Bebida -->
+    <string name="detalhe_bebida">Drink Details</string>
+    <string name="nome_bebida">Name:</string>
+    <string name="quantidade_bebida">Amount:</string>
+    <string name="valor_bebida">Value:</string>
+    <string name="custo_ml_bebida">Cost per ml:</string>
+    <string name="custo_por_litro">Cost per litre:</string>
+
+
 </resources>
