@@ -232,7 +232,7 @@
                             android:id="@+id/valor_latona_field_main"/>
                     </LinearLayout>
                     <TextView
-                        android:text=""
+                        android:text="@string/latona"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"

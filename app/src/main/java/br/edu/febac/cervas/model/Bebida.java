@@ -1,6 +1,8 @@
 package br.edu.febac.cervas.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.MathContext;
 
 /**
  * Created by gesie on 03/09/2016.
@@ -10,16 +12,16 @@ public class Bebida implements Serializable {
     private int id;
     private String nome;
     private int quantidade;
-    private float valor;
-    private float custo;
+    private BigDecimal valor;
+    private BigDecimal custo;
     private int imagemID;
 
-    public Bebida (String nome, float valor, int quantidade, int imagemID) {
+    public Bebida (String nome, BigDecimal valor, int quantidade, int imagemID) {
         this.nome = nome;
         this.valor = valor;
         this.quantidade = quantidade;
         this.imagemID = imagemID;
-        setCusto();
+        calculaCusto();
     }
 
     public int getId() {
@@ -38,17 +40,17 @@ public class Bebida implements Serializable {
         return quantidade;
     }
 
-    public float getValor() {
+    public BigDecimal getValor() {
         return valor;
     }
 
 
-    public float getCusto() {
+    public BigDecimal getCusto() {
         return custo;
     }
 
-    public void setCusto() {
-        this.custo = this.valor / this.quantidade;
+    public void calculaCusto() {
+        this.custo = this.valor.divide(new BigDecimal(this.quantidade), 4, BigDecimal.ROUND_UP);
     }
 
     @Override
@@ -56,8 +58,8 @@ public class Bebida implements Serializable {
         return this.nome + " - " + this.quantidade + " ml";
     }
 
-    public float getCustoPorLivro() {
-        return custo * 1000;
+    public BigDecimal getCustoPorLivro() {
+        return this.custo.multiply(new BigDecimal("1000"), MathContext.DECIMAL64);
     }
 
     public int getImagemID() {

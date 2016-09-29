@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -41,7 +42,6 @@ public class MainActivity extends CervasBaseActivity {
         longneckField = (EditText) findViewById(R.id.valor_longneck_field_main);
         barrilField = (EditText) findViewById(R.id.valor_barril_field_main);
 
-
         valorPersonalizada1Field = (EditText) findViewById(R.id.valor_personalizado_1_field_main);
         mlPersonalizada1Field = (EditText) findViewById(R.id.ml_personalizado_1_field_main);
         valorPersonalizada2Field = (EditText) findViewById(R.id.valor_personalizado_2_field_main);
@@ -55,44 +55,44 @@ public class MainActivity extends CervasBaseActivity {
 
         String campoValorGarrafa = garrafaField.getText().toString();
         if (!campoValorGarrafa.isEmpty()) {
-            float valorGarrafa = Float.parseFloat(campoValorGarrafa);
+            BigDecimal valorGarrafa = new BigDecimal(campoValorGarrafa);
             bebidas.add(new Bebida("Garrafa", valorGarrafa, 600, R.drawable.garrafa));
         }
 
         String campoValorLata = lataField.getText().toString();
         if (!campoValorLata.isEmpty()) {
-            float valorLata = Float.parseFloat(campoValorLata);
+            BigDecimal valorLata = new BigDecimal(campoValorLata);
             bebidas.add(new Bebida("Lata", valorLata, 350, R.drawable.lata));
         }
 
         String campoValorLitrao = litraoField.getText().toString();
         if (!campoValorLitrao.isEmpty()) {
-            float valorLitrao = Float.parseFloat(campoValorLitrao);
+            BigDecimal valorLitrao = new BigDecimal(campoValorLitrao);
             bebidas.add(new Bebida("Litrão", valorLitrao, 1000, R.drawable.litrao));
         }
 
         String campoValorLatona = latonaField.getText().toString();
         if (!campoValorLatona.isEmpty()) {
-            float valorLatona = Float.parseFloat(campoValorLatona);
+            BigDecimal valorLatona = new BigDecimal(campoValorLatona);
             bebidas.add(new Bebida("Latona", valorLatona, 550, R.drawable.latona));
         }
 
         String campoValorLongNeck = longneckField.getText().toString();
         if (!campoValorLongNeck.isEmpty()) {
-            float valorLongNeck = Float.parseFloat(campoValorLongNeck);
+            BigDecimal valorLongNeck = new BigDecimal(campoValorLongNeck);
             bebidas.add(new Bebida("Long Neck", valorLongNeck, 355, R.drawable.longneck));
         }
 
         String campoValorBarril = barrilField.getText().toString();
         if (!campoValorBarril.isEmpty()) {
-            float valorBarril = Float.parseFloat(campoValorBarril);
+            BigDecimal valorBarril = new BigDecimal(campoValorBarril);
             bebidas.add(new Bebida("Barril", valorBarril, 5000, R.drawable.barril));
         }
 
         String campoValorPersonalizado1 = valorPersonalizada1Field.getText().toString();
         String campoMlPersonalizado1 = mlPersonalizada1Field.getText().toString();
         if (!campoValorPersonalizado1.isEmpty() && !campoMlPersonalizado1.isEmpty()) {
-            float valor = Float.parseFloat(campoValorPersonalizado1);
+            BigDecimal valor = new BigDecimal(campoMlPersonalizado1);
             int ml = Integer.parseInt(campoMlPersonalizado1);
             bebidas.add(new Bebida("Personalizada 1", valor, ml, R.drawable.interrogacao));
         }
@@ -100,7 +100,7 @@ public class MainActivity extends CervasBaseActivity {
         String campoValorPersonalizado2 = valorPersonalizada2Field.getText().toString();
         String campoMlPersonalizado2 = mlPersonalizada2Field.getText().toString();
         if (!campoValorPersonalizado2.isEmpty() && !campoMlPersonalizado2.isEmpty()) {
-            float valor = Float.parseFloat(campoValorPersonalizado2);
+            BigDecimal valor = new BigDecimal(campoMlPersonalizado2);
             int ml = Integer.parseInt(campoMlPersonalizado2);
             bebidas.add(new Bebida("Personalizada 2", valor, ml, R.drawable.interrogacao));
         }

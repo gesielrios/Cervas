@@ -43,9 +43,9 @@ public class DrinkDetailActivity extends CervasBaseActivity {
         drinkImage.setImageResource(garregaImagem(bebida));
         nameDrinkField.setText(bebida.getNome());
         amountDrinkField.setText(bebida.getQuantidade() + " ml");
-        valueDrinkField.setText("R$ " + String.format("%.2f", new Object[]{Float.valueOf(bebida.getValor())}));
-        MlCostDrinkField.setText("R$ " + String.format("%.4f", new Object[]{Float.valueOf(bebida.getCusto())}));
-        CostPerLitreDrinkField.setText("R$ " + String.format("%.2f", new Object[]{Float.valueOf(bebida.getCustoPorLivro())}));
+        valueDrinkField.setText("R$ " + bebida.getValor().setScale(2));
+        MlCostDrinkField.setText("R$ " + bebida.getCusto().setScale(4));
+        CostPerLitreDrinkField.setText("R$ " + bebida.getCustoPorLivro().setScale(2));
     }
 
     private int garregaImagem(Bebida bebida) {

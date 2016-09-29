@@ -15,13 +15,6 @@ public class BebidaComparator implements Comparator<Object> {
         Bebida bebida1 = (Bebida) obj1;
         Bebida bebida2 = (Bebida) obj2;
 
-        if (bebida1.getCusto() < bebida2.getCusto())
-            return -1;
-
-
-        if (bebida1.getCusto() > bebida2.getCusto())
-            return 1;
-
-        return 0;
+        return bebida1.getCusto().compareTo(bebida2.getCusto());
     }
 }
