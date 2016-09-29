@@ -92,7 +92,7 @@ public class MainActivity extends CervasBaseActivity {
         String campoValorPersonalizado1 = valorPersonalizada1Field.getText().toString();
         String campoMlPersonalizado1 = mlPersonalizada1Field.getText().toString();
         if (!campoValorPersonalizado1.isEmpty() && !campoMlPersonalizado1.isEmpty()) {
-            BigDecimal valor = new BigDecimal(campoMlPersonalizado1);
+            BigDecimal valor = new BigDecimal(campoValorPersonalizado1);
             int ml = Integer.parseInt(campoMlPersonalizado1);
             bebidas.add(new Bebida("Personalizada 1", valor, ml, R.drawable.interrogacao));
         }
@@ -100,7 +100,7 @@ public class MainActivity extends CervasBaseActivity {
         String campoValorPersonalizado2 = valorPersonalizada2Field.getText().toString();
         String campoMlPersonalizado2 = mlPersonalizada2Field.getText().toString();
         if (!campoValorPersonalizado2.isEmpty() && !campoMlPersonalizado2.isEmpty()) {
-            BigDecimal valor = new BigDecimal(campoMlPersonalizado2);
+            BigDecimal valor = new BigDecimal(campoValorPersonalizado2);
             int ml = Integer.parseInt(campoMlPersonalizado2);
             bebidas.add(new Bebida("Personalizada 2", valor, ml, R.drawable.interrogacao));
         }
